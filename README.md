@@ -18,7 +18,7 @@ Welcome to **telegram-media-forwarder**! 🎉 This Telegram bot script uses Tele
 1. **Clone the repository:**
 
     ```bash
-    git clone https://github.com/yourusername/telegram-media-forwarder.git
+    git clone https://github.com/ShUBHaMJHA9/telegram-media-forwarder.git
     ```
 
 2. **Navigate to the project directory:**
