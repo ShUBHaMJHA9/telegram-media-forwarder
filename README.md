@@ -1,92 +1,128 @@
-# 📤 telegram-media-forwarder 🚀
 
-Welcome to **telegram-media-forwarder**! 🎉 This Telegram bot script uses Telethon to manage and forward media and text messages across channels. Perfect for automating message forwarding, promoting channels, and keeping your storage clean! 🌟
+# 📥 **MediaMagic Downloader** 🚀
 
-![Telegram Media Forwarder](https://erfan4lx.com/wp-content/uploads/2022/09/Telegram-Channel-Posts-Forwarder-2.png) <!-- Example image -->
+Welcome to **MediaMagic Downloader**! 🎉 This powerful command-line tool allows you to effortlessly download videos, audio, and thumbnails from platforms like **YouTube**, **TikTok**, **Instagram**, **Spotify**, **Terabox**, and more! Whether you want to grab videos in HD, download audio-only tracks, or simply fetch a thumbnail, **MediaMagic** has got you covered. 🌟
+
+![MediaMagic Downloader](https://upload.wikimedia.org/wikipedia/commons/4/42/Download_icon_%28Windows%29.png)
 
 ## 🛠 Features
 
-- **📩 Forwarding Messages:** Automatically forwards text and media messages from specified source channels to a target channel.
-  ![Forwarding Messages](https://erfan4lx.com/wp-content/uploads/2022/09/Telegram-Channel-Posts-Forwarder-2.png) <!-- Use this or a relevant image -->
-- **🔔 Periodic Promotions:** Sends periodic messages to invite users to join the target channel.
-  ![Periodic Promotions](https://example.com/periodic-promotions.png) <!-- Replace with your own image -->
-- **🗑 File Management:** Downloads media files, tracks them, and deletes them after 30 minutes to save storage space.
-  ![File Management](https://example.com/file-management.png) <!-- Replace with your own image -->
+- **📥 Multi-Platform Support:** Download videos, audio, and thumbnails from platforms like YouTube, TikTok, Instagram, Terabox, and Spotify.  
+  ![Multi-Platform Support](https://www.itsupportguide.com/wp-content/uploads/2020/12/multiple-file-types.jpg)
+- **🎬 Video & Audio Downloading:** Fetch videos in multiple resolutions (e.g., 720p, 1080p) or download audio in your preferred format (MP3, AAC, etc.).  
+  ![Video & Audio Downloading](https://www.ubergizmo.com/wp-content/uploads/2023/02/youtube-video-player.jpg)
+- **🔍 Fetch Media Info:** View details such as video title, duration, and quality before downloading.  
+  ![Fetch Media Info](https://www.filmfileeurope.com/wp-content/uploads/2022/07/fetch-media-info.png)
+- **💾 File Management:** Download, track, and organize your media with ease. Specify output directories and avoid storage clutter.  
+  ![File Management](https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Folder_icon_%28Windows%29.svg/200px-Folder_icon_%28Windows%29.svg.png)
 
 ## 🚀 Installation
 
-1. **Clone the repository:**
+### 1. Clone the repository:
 
-    ```bash
-    git clone https://github.com/ShUBHaMJHA9/telegram-media-forwarder.git
-    ```
+```bash
+git clone https://github.com/yourusername/MediaMagic-Downloader.git
+```
 
-2. **Navigate to the project directory:**
+### 2. Navigate to the project directory:
 
-    ```bash
-    cd telegram-media-forwarder
-    ```
+```bash
+cd MediaMagic-Downloader
+```
 
-3. **Set up a virtual environment:**
+### 3. Set up a virtual environment:
 
-    ```bash
-    python3 -m venv venv
-    ```
+```bash
+python3 -m venv venv
+```
 
-4. **Activate the virtual environment:**
-    - On Windows:
-      ```bash
-      venv\Scripts\activate
-      ```
-    - On macOS/Linux:
-      ```bash
-      source venv/bin/activate
-      ```
+### 4. Activate the virtual environment:
+#### Windows:
 
-5. **Install the required dependencies:**
+```bash
+venv\Scripts\activate
+```
 
-    ```bash
-    pip install -r requirements.txt
-    ```
+#### macOS/Linux:
 
-6. **Create a `.env` file** in the project directory with your API credentials and channel details:
+```bash
+source venv/bin/activate
+```
 
-    ```env
-    API_ID=your_api_id
-    API_HASH=your_api_hash
-    PHONE_NUMBER=your_phone_number
-    TARGET_CHANNEL=your_target_channel
-    SOURCE_CHANNELS=-1002017301405,-1002017179315,-1001178590665,-1002101951315
-    ```
+### 5. Install the required dependencies:
 
-    Replace the placeholders with your actual values.
+```bash
+pip install -r requirements.txt
+```
 
-7. **Run the script:**
+This will install essential libraries such as:
 
-    ```bash
-    python msg.py
-    ```
+- `yt-dlp`: A powerful video downloader.
+- `ffmpeg`: A multimedia framework for video/audio processing.
+- `requests`: For handling HTTP requests.
+- `termcolor`: For adding color to the terminal output.
+
+### 6. Install FFmpeg (if not already installed)
+#### Windows: 
+Download FFmpeg from [FFmpeg.org](https://ffmpeg.org) and add it to your PATH.
+
+#### Linux:
+Install using your package manager:
+
+```bash
+sudo apt install ffmpeg
+```
+
+### 7. Run the script:
+
+```bash
+python mediamagic
+```
 
 ## 🌟 Usage
+Once the tool is installed, you can use the following commands to start downloading media:
 
-- **API Credentials:** Ensure your `api_id`, `api_hash`, and `phone_number` are set correctly in the `.env` file. 🔐
-- **Source Channels:** Modify the `SOURCE_CHANNELS` list with the appropriate channel IDs from which messages will be forwarded. 📡
-- **Target Channel:** Set the `TARGET_CHANNEL` with the username or ID of the channel where messages will be sent. 📨
-- **Periodic Promotions:** The bot will automatically send join messages to the target channel every 5 minutes. 🔔
-- **File Management:** Media files are downloaded, tracked, and deleted after 30 minutes to manage storage space. 🗑
+### Command Structure
+
+```bash
+python mediamagic [OPTIONS]
+```
+
+### Examples
+
+1. **Download Media**  
+To download media (video, audio, thumbnail) from a URL:
+
+```bash
+python mediamagic -u https://example.com -d -o /path/to/save
+```
+
+- `-u`: URL of the media to download.
+- `-d`: Start the download process.
+- `-o`: Specify the output directory.
+
+2. **Fetch Media Information**  
+To get media details without downloading:
+
+```bash
+python mediamagic -u https://example.com --info
+```
+
+- `--info`: Displays media information without initiating the download.
+
+3. **Show Supported Platforms**  
+To list all supported platforms (YouTube, TikTok, etc.):
+
+```bash
+python mediamagic --platforms
+```
+
+4. **Show Current Version**  
+To display the current version of MediaMagic Downloader:
+
+```bash
+python mediamagic --version
+```
 
 ## 📜 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details. 📜
-
-## 💡 Contributing
-
-Feel free to fork the repository, make improvements, and submit pull requests. Contributions are always welcome! 🤝
-
-## 📞 Contact
-
-For any issues or inquiries, please open an issue on the [GitHub repository](https://github.com/ShUBHaMJHA9/telegram-media-forwarder/issues). 🚀
-
----
-
-Happy forwarding! 🎉✨
+This project is licensed under the MIT License - see the LICENSE file for details. 📜
