@@ -1,20 +1,13 @@
-
 # 📥 **MediaMagic Downloader** 🚀
 
 Welcome to **MediaMagic Downloader**! 🎉 This powerful command-line tool allows you to effortlessly download videos, audio, and thumbnails from platforms like **YouTube**, **TikTok**, **Instagram**, **Spotify**, **Terabox**, and more! Whether you want to grab videos in HD, download audio-only tracks, or simply fetch a thumbnail, **MediaMagic** has got you covered. 🌟
 
-![MediaMagic Downloader](https://upload.wikimedia.org/wikipedia/commons/4/42/Download_icon_%28Windows%29.png)
-
 ## 🛠 Features
 
 - **📥 Multi-Platform Support:** Download videos, audio, and thumbnails from platforms like YouTube, TikTok, Instagram, Terabox, and Spotify.  
-  ![Multi-Platform Support](https://www.itsupportguide.com/wp-content/uploads/2020/12/multiple-file-types.jpg)
 - **🎬 Video & Audio Downloading:** Fetch videos in multiple resolutions (e.g., 720p, 1080p) or download audio in your preferred format (MP3, AAC, etc.).  
-  ![Video & Audio Downloading](https://www.ubergizmo.com/wp-content/uploads/2023/02/youtube-video-player.jpg)
 - **🔍 Fetch Media Info:** View details such as video title, duration, and quality before downloading.  
-  ![Fetch Media Info](https://www.filmfileeurope.com/wp-content/uploads/2022/07/fetch-media-info.png)
-- **💾 File Management:** Download, track, and organize your media with ease. Specify output directories and avoid storage clutter.  
-  ![File Management](https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Folder_icon_%28Windows%29.svg/200px-Folder_icon_%28Windows%29.svg.png)
+- **💾 File Management:** Download, track, and organize your media with ease. Specify output directories and avoid storage clutter.
 
 ## 🚀 Installation
 
@@ -22,6 +15,7 @@ Welcome to **MediaMagic Downloader**! 🎉 This powerful command-line tool allow
 
 ```bash
 git clone https://github.com/yourusername/MediaMagic-Downloader.git
+
 ```
 
 ### 2. Navigate to the project directory:
